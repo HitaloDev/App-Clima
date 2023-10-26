@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>App Clima e Música</title>
+</head>
+<body>
+
+    <section class="container">
+        <video class="video" autoplay muted loop>
+            <source id="video-source" src="./video/video1.mp4" type="video/mp4">
+        </video>
+
+        <div class="caixa-pesquisa">
+                <input id="input-busca" placeholder="Digite o nome da cidade" type="text">
+                <label for="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+        </div>
+
+        <div class="caixa">
+            <div class="clima">
+                <img src="./assets/01d.png" alt="" class="icone-tempo">
+                <h2 class="nome-cidade">SÃO PAULO</h2>
+                <p class="temperatura">25°C</p>
+                <div class="max-temperatura">
+                    <p>MÁX: 26°C</p>
+                    <p>MÍN 25°C</p>
+                </div>
+
+            </div>
+
+            <div class="musica">
+                <img src="./assets/Musica.png" alt="icone-musica">
+                <h2>PLAYLIST</h2>
+                <div class="lista-musica">
+                    <div class="imagem-musica">
+                        <img src="./assets/image 1.png" alt="">
+                        <p>Detox</p>
+                    </div>
+                    <div class="imagem-musica">
+                        <img src="./assets/image 1.png" alt="">
+                        <p>Rock Acústico</p>
+                    </div>
+                    <div class="imagem-musica">
+                        <img src="./assets/image 1.png" alt="">
+                        <p>Hora do Rush</p>
+                    </div>
+                </div>
+                <!-- <ul>
+                    <li><img src="./assets/image 1.png" alt=""> Detox</li>
+                    <li><img src="./assets/image 1.png" alt=""> Hora do Rush</li>
+                    <li><img src="./assets/image 1.png" alt=""> Rock Acústico</li>
+                </ul> -->
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
