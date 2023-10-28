@@ -10,55 +10,28 @@
 <body>
 
     <section class="container">
-        <video class="video" autoplay muted loop>
-            <source id="video-source" src="./video/video1.mp4" type="video/mp4">
-        </video>
 
         <div class="caixa-pesquisa">
-                <input id="input-busca" placeholder="Digite o nome da cidade" type="text">
+                <input placeholder="Digite o nome da cidade" type="text" id="input">
                 <label for="">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" onclick="iniciarBotao()"></i>
                 </label>
         </div>
 
         <div class="caixa">
             <div class="clima">
-                <img src="./assets/01d.png" alt="" class="icone-tempo">
-                <h2 class="nome-cidade">SÃO PAULO</h2>
-                <p class="temperatura">25°C</p>
-                <div class="max-temperatura">
-                    <p>MÁX: 26°C</p>
-                    <p>MÍN 25°C</p>
+                <h2 class="nome-cidade" id="nome-cidade">São Paulo</h2>
+                <p class="temperatura" id="temperatura">22°C</p>
+                <p class="umidade" id="umidade">Umidade: 66%</p>
+                <div class="texto-imagem">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icone-tempo" id="icone-tempo">
+                    <p id="nuvens">Nublado</p>
                 </div>
-
             </div>
 
-            <div class="musica">
-                <img src="./assets/Musica.png" alt="icone-musica">
-                <h2>PLAYLIST</h2>
-                <div class="lista-musica">
-                    <div class="imagem-musica">
-                        <img src="./assets/image 1.png" alt="">
-                        <p>Detox</p>
-                    </div>
-                    <div class="imagem-musica">
-                        <img src="./assets/image 1.png" alt="">
-                        <p>Rock Acústico</p>
-                    </div>
-                    <div class="imagem-musica">
-                        <img src="./assets/image 1.png" alt="">
-                        <p>Hora do Rush</p>
-                    </div>
-                </div>
-                <!-- <ul>
-                    <li><img src="./assets/image 1.png" alt=""> Detox</li>
-                    <li><img src="./assets/image 1.png" alt=""> Hora do Rush</li>
-                    <li><img src="./assets/image 1.png" alt=""> Rock Acústico</li>
-                </ul> -->
-            </div>
-
-        </div>
     </section>
 
+
+    <script src="./script.js"></script>
 </body>
 </html>

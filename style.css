@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Alumni Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -15,16 +15,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
 
-.video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    background-image: url(./assets/pexels-stein-egil-liland-3408744.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .caixa-pesquisa {
@@ -62,78 +56,51 @@
 .caixa {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    padding: 30px 550px;
+    justify-content: center;
+    padding: 30px 0;
 }
 
-.clima, .musica {
-    background-color: rgb(255, 255, 255, 0.6);
-    padding: 50px;
+.clima {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px 70px;
     border-radius: 50px;
 
     box-shadow: 10px 10px 60px white;
 }
 
 .clima img {
-    width: 250px;
+    width: 90px;
 }
 
-.musica img {
-    width: 250px;
-}
-
-.clima, .musica {
+.clima {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .clima h2 {
+    text-transform: capitalize;
     margin-top: 20px;
     font-size: 50px;
 }
 
-.clima p {
+.temperatura {
     font-size: 100px;
     font-weight: 700;
 }
 
-.max-temperatura {
-    display: flex;
-    gap: 10px;
-}
-
-.max-temperatura p {
-    font-size: 25px;
-    font-weight: 500;
-}
-
-
-.musica h2 {
-    margin: 20px 0 20px 0;
+.umidade {
     font-size: 50px;
 }
 
-.lista-musica {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    width: 100%;
-    height: 100%;
-}
-
-.imagem-musica {
+.texto-imagem {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    justify-content: center;
 }
 
-.imagem-musica img {
-    width: 40px;
-}
-
-.imagem-musica p {
-    font-size: 30px;
+.texto-imagem p {
+    font-size: 35px;
+    text-transform: capitalize;
 }
